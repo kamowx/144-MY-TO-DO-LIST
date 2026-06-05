@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.header{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.input-section {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    background: #f7f8fc;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#todoInput:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+#addBtn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+}
+
+#todoList {
+    list-style: none;
+    padding: 20px;
+}
+
+#todoList li {
+    background: #f7f8fc;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#todoList li:hover {
+    background: #eef0ff;
+}
+
+#todoList li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-actions button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.todo-actions button:hover {
+    transform: scale(1.2);
+}
+
+.delete-btn {
+    color: #ff4d4d;
+}
+
+.complete-btn {
+    color: #4caf50;
+}
